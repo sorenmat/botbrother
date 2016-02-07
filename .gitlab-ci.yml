@@ -28,11 +28,13 @@ compile-go-1.5:
   image: golang:1.5
   stage: build
   script:
+    - go get -v
     - go build
 
 test-go-1.5:
   image: golang:1.5
   stage: test
   script:
+    - go get -v
     - go test -race -p 1 .
   allow_failure: true
