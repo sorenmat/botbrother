@@ -57,7 +57,7 @@ func handleShutdown() {
 func main() {
 	kingpin.Version("1.3")
 	kingpin.Parse()
-
+	handleShutdown()
 	api := slack.New(*token)
 
 	for {
@@ -88,6 +88,9 @@ func main() {
 				msg += "They were all started more then two days ago, are they still needed ?"
 				if user == "U02HSGZ3F" || *prod { // ME
 					err = api.ChatPostMessage(user, msg, &slack.ChatPostMessageOpt{Username: "Tradeshift AWS Service notifier"})
+					if err != nil {
+						log.Println("Was unable to send slack message: ",err)
+					}
 				}
 
 			}
@@ -140,10 +143,14 @@ func getAlreadyNotified() []string {
 	file, e := ioutil.ReadFile(filename)
 	if e != nil {
 		log.Println("File error: ", e)
+		return []string{}
 	}
 
 	var alreadyNotified []string
-	json.Unmarshal(file, &alreadyNotified)
+	err := json.Unmarshal(file, &alreadyNotified)
+	if err != nil {
+		log.Println("Unable to unmarshal file: ",err)
+	}
 	return alreadyNotified
 }
 

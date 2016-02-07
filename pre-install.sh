@@ -1,9 +1,9 @@
 #!/bin/sh
-addgroup --system discodns
-adduser --system --no-create-home --ingroup discodns --disabled-password --disabled-login discodns
+addgroup --system botbrother
+adduser --system --no-create-home --ingroup botbrother --disabled-password --disabled-login botbrother
 
-if [ ! -d /var/log/discodns ]; then
-  mkdir -p /var/log/discodns
-  chown discodns:discodns /var/log/discodns
-  chmod 750 /var/log/discodns
+if [ ! -d /var/log/botbrother ]; then
+  mkdir -p /var/log/botbrother
+  chown botbrother:botbrother /var/log/botbrother
+  chmod 750 /var/log/botbrother
 fi
