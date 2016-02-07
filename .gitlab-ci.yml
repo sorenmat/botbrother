@@ -35,6 +35,7 @@ test-go-1.5:
   image: golang:1.5
   stage: test
   script:
+    - godep get
     - go get -v
     - go test -race -p 1 .
   allow_failure: true

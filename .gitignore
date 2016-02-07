@@ -25,3 +25,4 @@ _testmain.go
 *.deb
 botbrother
 notified.json
+Godeps/_workspace

@@ -1,0 +1,78 @@
+{
+	"ImportPath": "github.com/sorenmat/botbrother",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "github.com/alecthomas/kingpin",
+			"Comment": "v2.1.10",
+			"Rev": "24b74030480f0aa98802b51ff4622a7eb09dfddd"
+		},
+		{
+			"ImportPath": "github.com/alecthomas/template",
+			"Rev": "b867cc6ab45cece8143cfcc6fc9c77cf3f2c23c0"
+		},
+		{
+			"ImportPath": "github.com/alecthomas/units",
+			"Rev": "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/aws",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/endpoints",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/ec2query",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/rest",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/signer/v4",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/waiter",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/service/ec2",
+			"Comment": "v1.0.11-4-gc59d0ce",
+			"Rev": "c59d0ced7590a7e8df83b5871eb6dfbb13940af2"
+		},
+		{
+			"ImportPath": "github.com/bluele/slack",
+			"Rev": "6d00f93158acefc3a0f605c171d1baa80ba86b73"
+		},
+		{
+			"ImportPath": "github.com/go-ini/ini",
+			"Comment": "v1.8.6",
+			"Rev": "afbd495e5aaea13597b5e14fe514ddeaa4d76fc3"
+		},
+		{
+			"ImportPath": "github.com/jmespath/go-jmespath",
+			"Comment": "0.2.2-2-gc01cf91",
+			"Rev": "c01cf91b011868172fdcd9f41838e80c9d716264"
+		}
+	]
+}

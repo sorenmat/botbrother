@@ -11,11 +11,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/alecthomas/kingpin"
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/bluele/slack"
+	"github.com/sorenmat/botbrother/Godeps/_workspace/src/github.com/alecthomas/kingpin"
+	"github.com/sorenmat/botbrother/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws"
+	"github.com/sorenmat/botbrother/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/session"
+	"github.com/sorenmat/botbrother/Godeps/_workspace/src/github.com/aws/aws-sdk-go/service/ec2"
+	"github.com/sorenmat/botbrother/Godeps/_workspace/src/github.com/bluele/slack"
 )
 
 const filename = "notified.json"
@@ -89,7 +89,7 @@ func main() {
 				if user == "U02HSGZ3F" || *prod { // ME
 					err = api.ChatPostMessage(user, msg, &slack.ChatPostMessageOpt{Username: "Tradeshift AWS Service notifier"})
 					if err != nil {
-						log.Println("Was unable to send slack message: ",err)
+						log.Println("Was unable to send slack message: ", err)
 					}
 				}
 
@@ -149,7 +149,7 @@ func getAlreadyNotified() []string {
 	var alreadyNotified []string
 	err := json.Unmarshal(file, &alreadyNotified)
 	if err != nil {
-		log.Println("Unable to unmarshal file: ",err)
+		log.Println("Unable to unmarshal file: ", err)
 	}
 	return alreadyNotified
 }
